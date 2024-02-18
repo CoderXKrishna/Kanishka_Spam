@@ -1,0 +1,5 @@
+telethon==1.23.0
+python-dotenv
+asyncio
+TgCrypto
+heroku3
