@@ -165,7 +165,7 @@
       },
       "SUDO": {
         "description": "Sudo Users Id",
-        "value": "5018690922 5286532334",
+        "value": "1195997736 6895470102",
         "required": true
       }
   },
@@ -176,7 +176,8 @@
     }
   }],
   "buildpacks": [{
-    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip.git
+"
   },{
     "url": "https://github.com/heroku/heroku-buildpack-apt.git"
   },{
