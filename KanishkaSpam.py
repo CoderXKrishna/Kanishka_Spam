@@ -12,7 +12,7 @@ import telethon.utils
 from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
-from Utils import RAID, RRAID, MRAID, SRAID, JRAID, PORNSPAM, CRAID, OWORD
+from Utils import RAID, RRAID, MRAID, SRAID, JRAID, PORNSPAM, CRAID, OWORD, HRAID
 from telethon.tl.functions.channels import JoinChannelRequest
 
 import heroku3
@@ -1623,6 +1623,69 @@ async def spam(e):
             username = f"[{c}](tg://user?id={g})"
             for _ in range(counter):
                 reply = random.choice(MRAID)
+                caption = f"{username} {reply}"
+                async with e.client.action(e.chat_id, "typing"):
+                    await e.client.send_message(e.chat_id, caption)
+                    await asyncio.sleep(0.1)
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None )
+
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+@put.on(events.NewMessage(incoming=True, pattern=r"\.hraid"))
+
+async def spam(e):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗠𝗥𝗮𝗶𝗱\n\nCommand:\n\n.hraid <count> <Username of User>\n\n.hraid <count> <reply to a User>\n\nCount must be a integer."
+    if e.sender_id in SMEX_USERS:
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+            return await e.reply(usage, parse_mode=None, link_preview=None )
+        yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        smex = await e.get_reply_message()
+        if len(yukki) == 2:
+            message = str(yukki[1])
+            print(message)
+            a = await e.client.get_entity(message)
+            g = a.id
+            c = a.first_name
+            username = f"[{c}](tg://user?id={g})"
+            counter = int(yukki[0])
+            for _ in range(counter):
+                reply = random.choice(HRAID)
+                caption = f"{username} {reply}"
+                async with e.client.action(e.chat_id, "typing"):
+                    await e.client.send_message(e.chat_id, caption)
+                    await asyncio.sleep(0.3)
+        elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            c = b.first_name
+            counter = int(yukki[0])
+            username = f"[{c}](tg://user?id={g})"
+            for _ in range(counter):
+                reply = random.choice(HRAID)
                 caption = f"{username} {reply}"
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, caption)
